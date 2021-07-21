@@ -23,7 +23,7 @@ const eqArrays = function (arr1, arr2) {
   }
   //return true outside forloop
   return true;
-}
+};
 
 // assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 
