@@ -34,10 +34,10 @@ const middle = function (array) {
   }
   //even number of elements: return 2 elements in the middle 
   else if (array.length % 2 === 0) {
+    array.sort();
     let newArr = [];
-    let x = Math.floor((array.length)/ 2);
-    newArr.push(x);
-    newArr.push(x + 1);
+    newArr.push(array[Math.floor(((array.length) / 2) - 1)]);
+    newArr.push(array[Math.floor((array.length) / 2)]);
     return newArr;
   }
   //odd # of elements: return 1 single element 
